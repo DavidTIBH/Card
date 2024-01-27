@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Caso eu queira que através do texto text-color com a cor WHITE seja inserida em qualquer coisa basta usar o comando :root e var(--text-color)*/
+/*aqui vamos trocar o light e dark da página.*/
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --text-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --button-img: url(./assets/moon-stars.svg);
+}
+
+.Light{
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --text-color-hover: rgba(255, 255, 255, 0.5);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+   --button-img: url(./assets/sun.svg);
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+}
+body * {
+  font-family: "Playfair Display", serif;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--text-color);
+}
+
+.container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+.avatar p {
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 8px;
+  height: 40px;
+}
+
+/* Verificar isso depois.
+.avatar ul{
+font-weight: 500;
+line-height: 20px;
+}*/
+
+.avatar {
+  text-align: center;
+  padding: 24px;
+}
+
+.avatar img {
+  width: 150px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+ul li a:hover {
+  background: var(--text-color-hover);
+  border: 1px solid var(--text-color);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+.social-links a:hover {
+  /* Efeito de borda, preta, largura e border-radius pra ser uma bolinha*/
+  background: var(--highlight-color);
+  padding: 16px;
+}
+/* Efeito dos icones quando passar o mouse em cima 
+display: flex
+justify-content: center*/
+
+/* Efeito dos icones quando passar o mouse em cima */
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  padding: 24px 0;
+  display: center;
+  text-align: center;
+}
+
+#button{
+
+position: relative;
+margin: 4px auto;
+width: 64px;
+}
+#button button{
+width: 32px;
+height:32px ;
+background: white var(--button-img) no-repeat center;
+border: 0;
+border-radius:50% ;
+position: absolute;
+top:50%;
+left: 0;
+z-index: 1;
+transform: translateY(-50%);
+}
+#button span {
+  display: block;
+  width: 64px;
+  height: 24px;
+border: 1px solid var(--stroke-color);
+background: var(--surface-color);
+backdrop-filter: blur(4px);
+border-radius: 9999px;
+
+}
+
+.Light #button button{
+right: 0;
+left: initial;
+
+}
