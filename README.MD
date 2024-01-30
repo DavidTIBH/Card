@@ -18,7 +18,7 @@ Projeto de card ensinado por Rocketseat
 <br>
 
 <p align="center">
-  <img alt="Card" url="https://s3-alpha.figma.com/hub/file/3662877101/1fc5d4d4-c944-4a14-8b6d-5e6e519a3242-cover.png" width="100%" target="_blank">
+
 </p>
 
 ## 🚀 Tecnologias
