@@ -160,7 +160,9 @@ right: 0;
 left: initial;
 
 }
+
 /* Midia Queries*/
+/*
 @media(min-width:700px) {
 
 :root{--bg-url: url(./assets/bg-mobile.jpg);
@@ -171,5 +173,5 @@ left: initial;
 
 }
 
-}
+}*/
 
