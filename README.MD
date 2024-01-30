@@ -15,10 +15,12 @@ Projeto de card ensinado por Rocketseat
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000"target="_blank">
 </p>
 
+
+
 <br>
 
 <p align="center">
-
+ <img alt="License" src="https://s3-alpha.figma.com/hub/file/3662877101/1fc5d4d4-c944-4a14-8b6d-5e6e519a3242-cover.png"target="_blank">
 </p>
 
 ## 🚀 Tecnologias
